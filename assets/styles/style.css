@@ -1,0 +1,13 @@
+@import url('components/header.css');
+
+:root {
+	--white: #FFFFFF;
+	--bg-color: #E5E5E5;
+	--color-primary: #6688FF;
+	--monday-color: #FFA246;
+	--tuesday-color: #35E185;
+	--thursday-color: #B266FF;
+	--friday-color: #66D1FF;
+	--saturday-color: #FF66D4;
+	--sunday-color: #FF6666;
+}
