@@ -1,0 +1,71 @@
+@import url('../style.css');
+
+.add-informations {
+	margin: 1em 3em;
+	display: flex;
+	gap: 10px;
+}
+
+.add-informations__activity,
+.add-information__week,
+.add-information__hour {
+	border: 1px solid var(--button-save);
+	border-radius: 10px;
+}
+
+.add-informations__activity {
+	padding: 10px 195px 10px 5em;
+	outline: none;
+}
+
+.add-information__week {
+	padding: 10px 84px 10px 12px;
+}
+
+.add-informations__activity::placeholder,
+.add-information__week,
+.add-information__hour::placeholder {
+	color: var(--informations-color);
+	font-size: 14px;
+	font-family: var(--font-secondary);
+	font-weight: 400;
+}
+
+.add-information__button--add,
+.add-information__button--remove {
+	border: none;
+	color: var(--white);
+	font-family: var(--font-secondary);
+	font-size: 17px;
+	font-weight: 400;
+	border-radius: 10px;
+	padding: 7px 25px;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+
+.add-information__hour {
+	outline: none;
+}
+
+.add-information__button--add {
+	background-color: var(--button-save);
+	margin: 0 1em;
+}
+
+.add-information__button--remove {
+	background-color: var(--button-remove);
+}
+
+.add-information__button--add::before {
+	content: '+';
+	font-size: 25px;
+	margin: 0 13px 0 16px;
+}
+
+.add-information__button--remove::before {
+	content: '-';
+	font-size: 25px;
+	margin: 0 13px 0 16px;
+}
