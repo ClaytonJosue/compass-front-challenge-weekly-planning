@@ -10,4 +10,13 @@
 	--friday-color: #66D1FF;
 	--saturday-color: #FF66D4;
 	--sunday-color: #FF6666;
+	--font-primary: 'Poppins', sans-serif;
+	--font-secondary: 'Nunito', sans-serif;
+}
+
+body {
+	background-color: var(--bg-color);
+	font-family: var(--font-primary);
+	font-weight: 400;
+	font-size: 16px;
 }
