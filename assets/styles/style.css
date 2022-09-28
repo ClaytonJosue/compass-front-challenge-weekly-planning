@@ -12,6 +12,9 @@
 	--sunday-color: #FF6666;
 	--font-primary: 'Poppins', sans-serif;
 	--font-secondary: 'Nunito', sans-serif;
+	--button-save: #2CBE82;
+	--button-remove: #DA2B40;
+	--informations-color: #3B3E45;
 }
 
 body {

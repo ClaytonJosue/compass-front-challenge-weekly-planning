@@ -1,0 +1,71 @@
+@import url("../style.css");
+
+header {
+	background-color: var(--white);
+	display: flex;
+	justify-content: space-between;
+	padding: 2em 0;
+	border-radius: 20px;
+	box-shadow: 0px 4px 24px rgba(168, 168, 168, 0.25);
+}
+
+.header__informations {
+	background-color: var(--color-primary);
+	padding: .5em;
+	border-radius: 0px 14px 15px 0px;
+	width: 460px;
+}
+
+.header__informations--title {
+	color: var(--white);
+	font-weight: 700;
+	font-size: 22px;
+}
+
+.header__informations--text {
+	font-size: 12px;
+	font-weight: 300;
+	color: var(--white);
+	margin: 5px 0;
+}
+
+.buttons {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	width: 450px;
+	justify-content: center;
+}
+
+.button__save,
+.button__delete {
+	border: none;
+	color: var(--white);
+	font-family: var(--font-secondary);
+	font-size: 17px;
+	font-weight: 400;
+	border-radius: 10px;
+	padding: 7px 12px;
+}
+
+.button__save {
+	background-color: var(--button-save);
+}
+
+.button__delete {
+	background-color: var(--button-remove);
+}
+
+.time {
+	text-align: center;
+	color: var(--informations-color);
+	margin-right: 2em;
+}
+
+.time__hour {
+	font-size: 40px;
+}
+
+.time__date {
+	font-size: 20px;
+}
