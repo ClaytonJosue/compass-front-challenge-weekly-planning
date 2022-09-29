@@ -6,9 +6,9 @@ function addZero(number) {
 	}
 }
 
-let today = new Date();
 
 function date() {
+	let today = new Date();
 	// Hour
 	const hour = document.querySelector(".time__hour");
 
