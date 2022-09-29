@@ -1,11 +1,13 @@
 @import url('components/header.css');
 @import url('components/activity.css');
 @import url('components/week.css');
+@import url('components/calendar.css');
 
 :root {
 	--white: #FFFFFF;
 	--bg-color: #E5E5E5;
 	--color-primary: #6688FF;
+	--color-primary-opacity: rgba(102, 136, 255, 0.4);
 	--monday-color: #FFA246;
 	--tuesday-color: #35E185;
 	--thursday-color: #B266FF;
@@ -17,6 +19,8 @@
 	--button-save: #2CBE82;
 	--button-remove: #DA2B40;
 	--informations-color: #3B3E45;
+	--dark-gray: #333333;
+	--button-delete: #98031E;
 }
 
 body {
