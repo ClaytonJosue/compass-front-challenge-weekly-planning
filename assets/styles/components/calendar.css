@@ -4,13 +4,22 @@
 	margin-left: 17px;
 }
 
-.calendar__content {
+.hidden {
+	display: none;
+}
+
+.calendar-monday,
+.calendar-tuesday,
+.calendar-wednesday,
+.calendar-thursday,
+.calendar-friday,
+.calendar-saturday,
+.calendar-sunday {
 	display: flex;
 	margin: 1em 5px;
 }
 
 .calendar__time {
-	background-color: var(--color-primary-opacity);
 	width: 85px;
 	display: flex;
 	justify-content: center;
@@ -39,7 +48,6 @@
 .calendar__task--perfect {
 	width: 14px;
 	height: 85px;
-	background-color: var(--color-primary);
 	border-radius: 15px 0px 0px 15px;
 	margin-right: 10px;
 }
@@ -60,4 +68,68 @@
 	width: 57px;
 	height: 25px;
 	cursor: pointer;
+}
+
+/* Monday */
+.calendar__time-monday {
+	background-color: var(--monday-color-opacity);
+}
+
+.calendar__task--monday {
+	background-color: var(--monday-color);
+}
+
+/* Tuesday */
+.calendar__time-tuesday {
+	background-color: var(--tuesday-color-opacity);
+}
+
+.calendar__task--tuesday {
+	background-color: var(--tuesday-color);
+}
+
+/* Wednesday */
+.calendar__time--wednesday {
+	background-color: var(--color-primary-opacity);
+}
+
+.calendar__task--wednesday {
+	background-color: var(--color-primary);
+}
+
+/* Thursday */
+.calendar__time--thursday {
+	background-color: var(--thursday-color-opacity);
+}
+
+.calendar__task--thursday {
+	background-color: var(--thursday-color);
+}
+
+/* Friday */
+
+.calendar__time--friday {
+	background-color: var(--friday-color-opacity);
+}
+
+.calendar__task--friday {
+	background-color: var(--friday-color);
+}
+
+/* Saturday */
+.calendar__time--saturday {
+	background-color: var(--saturday-color-opacity);
+}
+
+.calendar__task--saturday {
+	background-color: var(--saturday-color);
+}
+
+/* Sunday */
+.calendar__time--sunday {
+	background-color: var(--sunday-color-opacity);
+}
+
+.calendar__task--sunday {
+	background-color: var(--sunday-color);
 }

@@ -9,11 +9,23 @@
 	--color-primary: #6688FF;
 	--color-primary-opacity: rgba(102, 136, 255, 0.4);
 	--monday-color: #FFA246;
+	--monday-color-opacity: rgba(255, 162, 70, 0.4);
+
 	--tuesday-color: #35E185;
+	--tuesday-color-opacity: rgba(53, 225, 133, 0.4);
+
 	--thursday-color: #B266FF;
+	--thursday-color-opacity: rgba(178, 102, 255, 0.4);
+
 	--friday-color: #66D1FF;
+	--friday-color-opacity: rgba(102, 209, 255, 0.4);
+
 	--saturday-color: #FF66D4;
+	--saturday-color-opacity: rgba(255, 102, 212, 0.4);
+
 	--sunday-color: #FF6666;
+	--sunday-color-opacity: rgba(255, 102, 102, 0.4);
+
 	--font-primary: 'Poppins', sans-serif;
 	--font-secondary: 'Nunito', sans-serif;
 	--button-save: #2CBE82;
@@ -28,6 +40,6 @@ body {
 	font-weight: 400;
 	font-size: 16px;
 	background: url('../imgs/bola-LogoCompasso\ 1.svg') no-repeat var(--bg-color);
-	background-position: right bottom;
+	background-position: right 50vh;
 	background-size: 35%;
 }

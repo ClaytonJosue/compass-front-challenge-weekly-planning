@@ -80,13 +80,13 @@
 		<!-- Calendar -->
 		<section class="calendar">
 			<!-- Monday -->
-			<div class="monday">
+			<div class="monday hidden">
 				<div class="calendar-monday">
-					<div class="calendar__time">
+					<div class="calendar__time calendar__time-monday">
 						<h3>10:30</h3>
 					</div>
 					<div class="calendar__task">
-						<div class="calendar__task--perfect"></div>
+						<div class="calendar__task--perfect calendar__task--monday"></div>
 						<p class="calendar__task--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem
 							ipsum
 							dolor sit amet, consectetur adipiscing elit</p>
@@ -95,21 +95,21 @@
 				</div>
 
 				<div class="calendar-monday">
-					<div class="calendar__time">
+					<div class="calendar__time calendar__time-monday">
 						<h3>11:00</h3>
 					</div>
 					<div class="calendar__task">
-						<div class="calendar__task--perfect"></div>
+						<div class="calendar__task--perfect calendar__task--monday"></div>
 						<p class="calendar__task--text">Descanso</p>
 						<button class="calendar__task--button">Apagar</button>
 					</div>
 				</div>
 				<div class="calendar-monday">
-					<div class="calendar__time">
+					<div class="calendar__time calendar__time-monday">
 						<h3>13:10</h3>
 					</div>
 					<div class="calendar__task">
-						<div class="calendar__task--perfect"></div>
+						<div class="calendar__task--perfect calendar__task--monday"></div>
 						<p class="calendar__task--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem
 							ipsum
 							dolor sit amet, consectetur adipiscing elit</p>
@@ -121,11 +121,11 @@
 			<!-- Tuesday -->
 			<div class="tuesday hidden">
 				<div class="calendar-tuesday">
-					<div class="calendar__time">
+					<div class="calendar__time calendar__time-tuesday">
 						<h3>10:30</h3>
 					</div>
 					<div class="calendar__task">
-						<div class="calendar__task--perfect"></div>
+						<div class="calendar__task--perfect calendar__task--perfect calendar__task--tuesday"></div>
 						<p class="calendar__task--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem
 							ipsum
 							dolor sit amet, consectetur adipiscing elit</p>
@@ -134,37 +134,25 @@
 				</div>
 
 				<div class="calendar-tuesday">
-					<div class="calendar__time">
+					<div class="calendar__time calendar__time-tuesday">
 						<h3>11:00</h3>
 					</div>
 					<div class="calendar__task">
-						<div class="calendar__task--perfect"></div>
+						<div class="calendar__task--perfect calendar__task--tuesday"></div>
 						<p class="calendar__task--text">Descanso</p>
-						<button class="calendar__task--button">Apagar</button>
-					</div>
-				</div>
-				<div class="calendar-tuesday">
-					<div class="calendar__time">
-						<h3>13:10</h3>
-					</div>
-					<div class="calendar__task">
-						<div class="calendar__task--perfect"></div>
-						<p class="calendar__task--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem
-							ipsum
-							dolor sit amet, consectetur adipiscing elit</p>
 						<button class="calendar__task--button">Apagar</button>
 					</div>
 				</div>
 			</div>
 
 			<!-- Wednesday -->
-			<div class="wednesday hidden">
+			<div class="wednesday">
 				<div class="calendar-wednesday">
-					<div class="calendar__time">
+					<div class="calendar__time calendar__time--wednesday">
 						<h3>10:30</h3>
 					</div>
 					<div class="calendar__task">
-						<div class="calendar__task--perfect"></div>
+						<div class="calendar__task--perfect calendar__task--wednesday"></div>
 						<p class="calendar__task--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem
 							ipsum
 							dolor sit amet, consectetur adipiscing elit</p>
@@ -173,22 +161,22 @@
 				</div>
 
 				<div class="calendar-wednesday">
-					<div class="calendar__time">
+					<div class="calendar__time calendar__time--wednesday">
 						<h3>11:00</h3>
 					</div>
 					<div class="calendar__task">
-						<div class="calendar__task--perfect"></div>
-						<p class="calendar__task--text">Descanso</p>
+						<div class="calendar__task--perfect calendar__task--wednesday"></div>
+						<p class=" calendar__task--text">Descanso</p>
 						<button class="calendar__task--button">Apagar</button>
 					</div>
 				</div>
 				<div class="calendar-wednesday">
-					<div class="calendar__time">
+					<div class="calendar__time calendar__time--wednesday">
 						<h3>13:10</h3>
 					</div>
 					<div class="calendar__task">
-						<div class="calendar__task--perfect"></div>
-						<p class="calendar__task--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem
+						<div class="calendar__task--perfect calendar__task--wednesday"></div>
+						<p class=" calendar__task--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem
 							ipsum
 							dolor sit amet, consectetur adipiscing elit</p>
 						<button class="calendar__task--button">Apagar</button>
@@ -199,12 +187,13 @@
 			<!-- Thursday -->
 			<div class="thursday hidden">
 				<div class="calendar-thursday">
-					<div class="calendar__time">
+					<div class="calendar__time calendar__time--thursday">
 						<h3>10:30</h3>
 					</div>
 					<div class="calendar__task">
-						<div class="calendar__task--perfect"></div>
-						<p class="calendar__task--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem
+						<div class="calendar__task--perfect calendar__task--thursday"></div>
+						<p class="calendar__task--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+							Lorem
 							ipsum
 							dolor sit amet, consectetur adipiscing elit</p>
 						<button class="calendar__task--button">Apagar</button>
@@ -212,24 +201,12 @@
 				</div>
 
 				<div class="calendar-thursday">
-					<div class="calendar__time">
+					<div class="calendar__time calendar__time--thursday">
 						<h3>11:00</h3>
 					</div>
 					<div class="calendar__task">
-						<div class="calendar__task--perfect"></div>
+						<div class="calendar__task--perfect calendar__task--thursday"></div>
 						<p class="calendar__task--text">Descanso</p>
-						<button class="calendar__task--button">Apagar</button>
-					</div>
-				</div>
-				<div class="calendar-thursday">
-					<div class="calendar__time">
-						<h3>13:10</h3>
-					</div>
-					<div class="calendar__task">
-						<div class="calendar__task--perfect"></div>
-						<p class="calendar__task--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem
-							ipsum
-							dolor sit amet, consectetur adipiscing elit</p>
 						<button class="calendar__task--button">Apagar</button>
 					</div>
 				</div>
@@ -238,12 +215,13 @@
 			<!-- Friday -->
 			<div class="friday hidden">
 				<div class="calendar-friday">
-					<div class="calendar__time">
+					<div class="calendar__time calendar__time--friday">
 						<h3>10:30</h3>
 					</div>
 					<div class="calendar__task">
-						<div class="calendar__task--perfect"></div>
-						<p class="calendar__task--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem
+						<div class="calendar__task--perfect calendar__task--friday"></div>
+						<p class="calendar__task--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+							Lorem
 							ipsum
 							dolor sit amet, consectetur adipiscing elit</p>
 						<button class="calendar__task--button">Apagar</button>
@@ -251,22 +229,23 @@
 				</div>
 
 				<div class="calendar-friday">
-					<div class="calendar__time">
+					<div class="calendar__time calendar__time--friday">
 						<h3>11:00</h3>
 					</div>
 					<div class="calendar__task">
-						<div class="calendar__task--perfect"></div>
+						<div class="calendar__task--perfect calendar__task--friday"></div>
 						<p class="calendar__task--text">Descanso</p>
 						<button class="calendar__task--button">Apagar</button>
 					</div>
 				</div>
 				<div class="calendar-friday">
-					<div class="calendar__time">
+					<div class="calendar__time calendar__time--friday">
 						<h3>13:10</h3>
 					</div>
 					<div class="calendar__task">
-						<div class="calendar__task--perfect"></div>
-						<p class="calendar__task--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem
+						<div class="calendar__task--perfect calendar__task--friday"></div>
+						<p class="calendar__task--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+							Lorem
 							ipsum
 							dolor sit amet, consectetur adipiscing elit</p>
 						<button class="calendar__task--button">Apagar</button>
@@ -277,12 +256,13 @@
 			<!-- Saturday -->
 			<div class="saturday hidden">
 				<div class="calendar-saturday">
-					<div class="calendar__time">
+					<div class="calendar__time calendar__time--saturday">
 						<h3>10:30</h3>
 					</div>
 					<div class="calendar__task">
-						<div class="calendar__task--perfect"></div>
-						<p class="calendar__task--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem
+						<div class="calendar__task--perfect calendar__task--saturday"></div>
+						<p class="calendar__task--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+							Lorem
 							ipsum
 							dolor sit amet, consectetur adipiscing elit</p>
 						<button class="calendar__task--button">Apagar</button>
@@ -290,24 +270,12 @@
 				</div>
 
 				<div class="calendar-saturday">
-					<div class="calendar__time">
+					<div class="calendar__time calendar__time--saturday">
 						<h3>11:00</h3>
 					</div>
 					<div class="calendar__task">
-						<div class="calendar__task--perfect"></div>
+						<div class="calendar__task--perfect calendar__task--saturday"></div>
 						<p class="calendar__task--text">Descanso</p>
-						<button class="calendar__task--button">Apagar</button>
-					</div>
-				</div>
-				<div class="calendar-saturday">
-					<div class="calendar__time">
-						<h3>13:10</h3>
-					</div>
-					<div class="calendar__task">
-						<div class="calendar__task--perfect"></div>
-						<p class="calendar__task--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem
-							ipsum
-							dolor sit amet, consectetur adipiscing elit</p>
 						<button class="calendar__task--button">Apagar</button>
 					</div>
 				</div>
@@ -316,12 +284,13 @@
 			<!-- Sunday -->
 			<div class="sunday hidden">
 				<div class="calendar-sunday">
-					<div class="calendar__time">
+					<div class="calendar__time calendar__time--sunday">
 						<h3>10:30</h3>
 					</div>
 					<div class="calendar__task">
-						<div class="calendar__task--perfect"></div>
-						<p class="calendar__task--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem
+						<div class="calendar__task--perfect calendar__task--sunday"></div>
+						<p class="calendar__task--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+							Lorem
 							ipsum
 							dolor sit amet, consectetur adipiscing elit</p>
 						<button class="calendar__task--button">Apagar</button>
@@ -329,22 +298,23 @@
 				</div>
 
 				<div class="calendar-sunday">
-					<div class="calendar__time">
+					<div class="calendar__time calendar__time--sunday">
 						<h3>11:00</h3>
 					</div>
 					<div class="calendar__task">
-						<div class="calendar__task--perfect"></div>
+						<div class="calendar__task--perfect calendar__task--sunday"></div>
 						<p class="calendar__task--text">Descanso</p>
 						<button class="calendar__task--button">Apagar</button>
 					</div>
 				</div>
 				<div class="calendar-sunday">
-					<div class="calendar__time">
+					<div class="calendar__time calendar__time--sunday">
 						<h3>13:10</h3>
 					</div>
 					<div class="calendar__task">
-						<div class="calendar__task--perfect"></div>
-						<p class="calendar__task--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem
+						<div class="calendar__task--perfect calendar__task--sunday"></div>
+						<p class="calendar__task--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+							Lorem
 							ipsum
 							dolor sit amet, consectetur adipiscing elit</p>
 						<button class="calendar__task--button">Apagar</button>
@@ -356,6 +326,7 @@
 	</main>
 	<!-- Main informations end -->
 	<script src="assets/scripts/header.js"></script>
+	<script src="assets/scripts/activities.js"></script>
 </body>
 
 </html>

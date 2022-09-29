@@ -31,6 +31,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	cursor: pointer;
 }
 
 .week__days--item-active {
@@ -47,6 +48,7 @@
 
 .week__days--item-quarta {
 	background-color: var(--color-primary);
+	transform: scale(1.2);
 }
 
 .week__days--item-quinta {
