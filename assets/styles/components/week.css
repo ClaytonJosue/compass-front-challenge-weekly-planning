@@ -1,0 +1,66 @@
+@import url("../style.css");
+
+.week {
+	display: flex;
+	margin-top: 2em;
+}
+
+.week__time {
+	background-color: var(--white);
+	padding: 1.5em 1em;
+	border-radius: 10px;
+	box-shadow: 0px 4px 24px rgba(168, 168, 168, 0.25);
+	margin: 0 20px;
+	font-family: var(--font-secondary);
+	font-weight: 400;
+	font-size: 17px;
+}
+
+.week__days--list {
+	display: flex;
+	gap: 20px;
+}
+
+.week__days--item {
+	font-size: 17px;
+	font-weight: 700;
+	color: var(--white);
+	border-radius: 9px 9px 0 0;
+	width: 150px;
+	height: 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.week__days--item-active {
+	transform: scale(1.1);
+}
+
+.week__days--item-segunda {
+	background-color: var(--monday-color);
+}
+
+.week__days--item-terca {
+	background-color: var(--tuesday-color);
+}
+
+.week__days--item-quarta {
+	background-color: var(--color-primary);
+}
+
+.week__days--item-quinta {
+	background-color: var(--thursday-color);
+}
+
+.week__days--item-sexta {
+	background-color: var(--friday-color);
+}
+
+.week__days--item-sabado {
+	background-color: var(--saturday-color);
+}
+
+.week__days--item-domingo {
+	background-color: var(--sunday-color);
+}
