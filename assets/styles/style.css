@@ -24,8 +24,10 @@
 }
 
 body {
-	background-color: var(--bg-color);
 	font-family: var(--font-primary);
 	font-weight: 400;
 	font-size: 16px;
+	background: url('../imgs/bola-LogoCompasso\ 1.svg') no-repeat var(--bg-color);
+	background-position: right bottom;
+	background-size: 35%;
 }
