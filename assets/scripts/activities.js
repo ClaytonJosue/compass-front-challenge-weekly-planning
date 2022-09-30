@@ -6,6 +6,7 @@ const fridayButton = document.querySelector(".week__days--item-sexta");
 const saturdayButton = document.querySelector(".week__days--item-sabado");
 const sundayButton = document.querySelector(".week__days--item-domingo");
 const removeBtn = document.querySelector(".add-information__button--remove");
+
 const monday_item = document.querySelector(".monday__item");
 const tuesday_item = document.querySelector(".tuesday__item");
 const wednesday_item = document.querySelector(".wednesday__item");

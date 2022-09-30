@@ -5,6 +5,21 @@ const calendarHour = document.querySelector(".calendar__hour");
 const calendar = document.querySelector(".calendar");
 const addBtn = document.querySelector(".add-information__button--add");
 const deleteBtn = document.querySelector(".add-information__button--remove");
+const removeOneBtnMonday = document.querySelector(".button--monday");
+const removeOneBtnTuesday = document.querySelector(".button--tuesday");
+const removeOneBtnWednesday = document.querySelector(".button--wednesday");
+const removeOneBtnThursday = document.querySelector(".button--thursday");
+const removeOneBtnFriday = document.querySelector(".button--friday");
+const removeOneBtnSaturday = document.querySelector(".button--saturday");
+const removeOneBtnSunday = document.querySelector(".button--sunday");
+
+const monday__item = document.querySelector(".monday__item");
+const tuesday__item = document.querySelector(".tuesday__item");
+const wednesday__item = document.querySelector(".wednesday__item");
+const thursday__item = document.querySelector(".thursday__item");
+const friday__item = document.querySelector(".friday__item");
+const saturday__item = document.querySelector(".saturday__item");
+const sunday__item = document.querySelector(".sunday__item");
 
 const mondayCalendar = document.querySelector(".monday");
 const tuesdayCalendar = document.querySelector(".tuesday");
@@ -74,6 +89,10 @@ function addTask() {
 		divTask.appendChild(buttonRemove);
 		buttonRemove.innerText = "Apagar";
 
+		buttonRemove.addEventListener('click', () => {
+			mondayItem.remove();
+		});
+
 	} else if (week == "Terça") {
 		let tuesdayItem = document.createElement("div");
 		tuesdayItem.classList.add("tuesday__item");
@@ -115,6 +134,10 @@ function addTask() {
 		buttonRemove.classList.add("calendar__task--button");
 		divTask.appendChild(buttonRemove);
 		buttonRemove.innerText = "Apagar";
+
+		buttonRemove.addEventListener('click', () => {
+			tuesdayItem.remove();
+		});
 
 	} else if (week == "Quarta") {
 
@@ -159,6 +182,10 @@ function addTask() {
 		divTask.appendChild(buttonRemove);
 		buttonRemove.innerText = "Apagar";
 
+		buttonRemove.addEventListener('click', () => {
+			wednesdayItem.remove();
+		});
+
 	} else if (week == "Quinta") {
 
 		let thursdayItem = document.createElement("div");
@@ -201,6 +228,10 @@ function addTask() {
 		buttonRemove.classList.add("calendar__task--button");
 		divTask.appendChild(buttonRemove);
 		buttonRemove.innerText = "Apagar";
+
+		buttonRemove.addEventListener('click', () => {
+			thursdayItem.remove();
+		});
 
 	} else if (week == "Sexta") {
 
@@ -245,6 +276,10 @@ function addTask() {
 		divTask.appendChild(buttonRemove);
 		buttonRemove.innerText = "Apagar";
 
+		buttonRemove.addEventListener('click', () => {
+			fridayItem.remove();
+		});
+
 	} else if (week == "Sabado") {
 
 		let saturdayItem = document.createElement("div");
@@ -288,6 +323,10 @@ function addTask() {
 		divTask.appendChild(buttonRemove);
 		buttonRemove.innerText = "Apagar";
 
+		buttonRemove.addEventListener('click', () => {
+			saturdayItem.remove();
+		});
+
 	} else if (week == "Domingo") {
 
 		let sundayItem = document.createElement("div");
@@ -330,6 +369,37 @@ function addTask() {
 		buttonRemove.classList.add("calendar__task--button");
 		divTask.appendChild(buttonRemove);
 		buttonRemove.innerText = "Apagar";
+
+		buttonRemove.addEventListener('click', () => {
+			sundayItem.remove();
+		});
 	}
 }
 
+removeOneBtnMonday.addEventListener('click', () => {
+	monday__item.remove();
+});
+
+removeOneBtnTuesday.addEventListener('click', () => {
+	tuesday__item.remove();
+});
+
+removeOneBtnWednesday.addEventListener('click', () => {
+	wednesday__item.remove();
+});
+
+removeOneBtnThursday.addEventListener('click', () => {
+	thursday__item.remove();
+});
+
+removeOneBtnFriday.addEventListener('click', () => {
+	friday__item.remove();
+});
+
+removeOneBtnSaturday.addEventListener('click', () => {
+	saturday__item.remove();
+});
+
+removeOneBtnSunday.addEventListener('click', () => {
+	sunday__item.remove();
+});
