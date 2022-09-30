@@ -8,19 +8,13 @@
 	display: none;
 }
 
-.calendar-monday,
-.calendar-tuesday,
-.calendar-wednesday,
-.calendar-thursday,
-.calendar-friday,
-.calendar-saturday,
-.calendar-sunday {
+.calendar-content {
 	display: flex;
 	margin: 1em 5px;
 }
 
 .calendar__time {
-	width: 85px;
+	min-width: 85px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -46,6 +40,14 @@
 }
 
 .calendar__task--perfect {
+	width: 14px;
+	height: 85px;
+	border-radius: 15px 0px 0px 15px;
+	margin-right: 10px;
+}
+
+.calendar__task--error {
+	background-color: var(--button-delete);
 	width: 14px;
 	height: 85px;
 	border-radius: 15px 0px 0px 15px;
