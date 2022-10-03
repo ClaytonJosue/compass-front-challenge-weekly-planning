@@ -12,6 +12,7 @@ const removeOneBtnThursday = document.querySelector(".button--thursday");
 const removeOneBtnFriday = document.querySelector(".button--friday");
 const removeOneBtnSaturday = document.querySelector(".button--saturday");
 const removeOneBtnSunday = document.querySelector(".button--sunday");
+const messageError = document.querySelector('.add-informations__error');
 
 const monday__item = document.querySelector(".monday__item");
 const tuesday__item = document.querySelector(".tuesday__item");
@@ -36,10 +37,16 @@ const list = JSON.parse(localStorage.getItem("calendar")) ?? [];
 
 addBtn.addEventListener('click', () => {
 	if (addInput.value && hour.value) {
+		addInput.classList.remove('add-informations__activity--error');
+		messageError.style.display = 'none';
+
 		showTask();
 
 		addInput.value = '';
 		addInput.focus();
+	} else {
+		addInput.classList.add('add-informations__activity--error');
+		messageError.style.display = 'block';
 	}
 });
 

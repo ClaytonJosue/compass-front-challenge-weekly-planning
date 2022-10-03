@@ -4,6 +4,7 @@
 	margin: 1em 3em;
 	display: flex;
 	gap: 10px;
+	position: relative;
 }
 
 .add-informations__activity,
@@ -16,6 +17,18 @@
 .add-informations__activity {
 	padding: 10px 195px 10px 5em;
 	outline: none;
+}
+
+.add-informations__activity--error {
+	border: 1px solid var(--error-color);
+}
+
+.add-informations__error {
+	display: none;
+	position: absolute;
+	top: 110%;
+	left: 1%;
+	color: var(--error-color);
 }
 
 .add-information__week {
