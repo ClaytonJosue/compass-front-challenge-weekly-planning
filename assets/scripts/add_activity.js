@@ -54,10 +54,6 @@ function addTask() {
 			mondayItem.classList.add("monday__item");
 			mondayCalendar.appendChild(mondayItem);
 
-			if (deleteBtn.addEventListener('click', () => {
-				mondayItem.remove();
-			}));
-
 			let divContent = document.createElement("div");
 			divContent.classList.add("calendar-content");
 			mondayItem.appendChild(divContent);
@@ -99,10 +95,6 @@ function addTask() {
 			let tuesdayItem = document.createElement("div");
 			tuesdayItem.classList.add("tuesday__item");
 			tuesdayCalendar.appendChild(tuesdayItem);
-
-			if (deleteBtn.addEventListener('click', () => {
-				tuesdayItem.remove();
-			}));
 
 			let divContent = document.createElement("div");
 			divContent.classList.add("calendar-content");
@@ -147,10 +139,6 @@ function addTask() {
 			wednesdayItem.classList.add("wednesday__item");
 			wednesdayCalendar.appendChild(wednesdayItem);
 
-			if (deleteBtn.addEventListener('click', () => {
-				wednesdayItem.remove();
-			}));
-
 			let divContent = document.createElement("div");
 			divContent.classList.add("calendar-content");
 			wednesdayItem.appendChild(divContent);
@@ -193,10 +181,6 @@ function addTask() {
 			let thursdayItem = document.createElement("div");
 			thursdayItem.classList.add("thursday__item");
 			thursdayCalendar.appendChild(thursdayItem);
-
-			if (deleteBtn.addEventListener('click', () => {
-				thursdayItem.remove();
-			}));
 
 			let divContent = document.createElement("div");
 			divContent.classList.add("calendar-content");
@@ -241,10 +225,6 @@ function addTask() {
 			fridayItem.classList.add("friday__item");
 			fridayCalendar.appendChild(fridayItem);
 
-			if (deleteBtn.addEventListener('click', () => {
-				fridayItem.remove();
-			}));
-
 			let divContent = document.createElement("div");
 			divContent.classList.add("calendar-content");
 			fridayItem.appendChild(divContent);
@@ -288,10 +268,6 @@ function addTask() {
 			saturdayItem.classList.add("saturday__item");
 			saturdayCalendar.appendChild(saturdayItem);
 
-			if (deleteBtn.addEventListener('click', () => {
-				saturdayItem.remove();
-			}));
-
 			let divContent = document.createElement("div");
 			divContent.classList.add("calendar-content");
 			saturdayItem.appendChild(divContent);
@@ -334,10 +310,6 @@ function addTask() {
 			let sundayItem = document.createElement("div");
 			sundayItem.classList.add("sunday__item");
 			sundayCalendar.appendChild(sundayItem);
-
-			if (deleteBtn.addEventListener('click', () => {
-				sundayItem.remove();
-			}));
 
 			let divContent = document.createElement("div");
 			divContent.classList.add("calendar-content");
@@ -406,6 +378,46 @@ function emptyMonth() {
 }
 
 addTask();
+
+deleteBtn.addEventListener('click', () => {
+	if (mondayCalendar.classList == 'monday') {
+		while (mondayCalendar.firstChild) {
+			mondayCalendar.removeChild(mondayCalendar.firstChild);
+			list.splice(mondayCalendar.firstChild);
+		}
+	} else if (tuesdayCalendar.classList == 'tuesday') {
+		while (tuesdayCalendar.firstChild) {
+			tuesdayCalendar.removeChild(tuesdayCalendar.firstChild);
+			list.splice(tuesdayCalendar.firstChild);
+		}
+	} else if (wednesdayCalendar.classList == 'wednesday') {
+		while (wednesdayCalendar.firstChild) {
+			wednesdayCalendar.removeChild(wednesdayCalendar.firstChild);
+			list.splice(wednesdayCalendar.firstChild);
+		}
+	} else if (thursdayCalendar.classList == 'thursday') {
+		while (thursdayCalendar.firstChild) {
+			thursdayCalendar.removeChild(thursdayCalendar.firstChild);
+			list.splice(thursdayCalendar.firstChild);
+		}
+	} else if (fridayCalendar.classList == 'friday') {
+		while (fridayCalendar.firstChild) {
+			fridayCalendar.removeChild(fridayCalendar.firstChild);
+			list.splice(fridayCalendar.firstChild);
+		}
+	} else if (saturdayCalendar.classList == 'saturday') {
+		while (saturdayCalendar.firstChild) {
+			saturdayCalendar.removeChild(saturdayCalendar.firstChild);
+			list.splice(saturdayCalendar.firstChild);
+		}
+	} else if (sundayCalendar.classList == 'sunday') {
+		while (sundayCalendar.firstChild) {
+			sundayCalendar.removeChild(sundayCalendar.firstChild);
+			list.splice(sundayCalendar.firstChild);
+		}
+	}
+
+})
 
 
 removeOneBtnMonday.addEventListener('click', () => {

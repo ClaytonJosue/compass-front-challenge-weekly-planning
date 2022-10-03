@@ -5,7 +5,6 @@ const thursdayButton = document.querySelector(".week__days--item-quinta");
 const fridayButton = document.querySelector(".week__days--item-sexta");
 const saturdayButton = document.querySelector(".week__days--item-sabado");
 const sundayButton = document.querySelector(".week__days--item-domingo");
-const removeBtn = document.querySelector(".add-information__button--remove");
 
 const monday_item = document.querySelector(".monday__item");
 const tuesday_item = document.querySelector(".tuesday__item");
@@ -40,14 +39,6 @@ mondayButton.addEventListener('click', () => {
 	friday.classList.add('hidden');
 	saturday.classList.add('hidden');
 	sunday.classList.add('hidden');
-
-	removeBtn.addEventListener('click', () => {
-		deleteTask();
-	})
-
-	function deleteTask() {
-		monday_item.remove();
-	}
 });
 
 // Tuesday
@@ -67,14 +58,6 @@ tuesdayButton.addEventListener('click', () => {
 	friday.classList.add('hidden');
 	saturday.classList.add('hidden');
 	sunday.classList.add('hidden');
-
-	removeBtn.addEventListener('click', () => {
-		deleteTask();
-	})
-
-	function deleteTask() {
-		tuesday_item.remove();
-	}
 });
 
 // Wednesday
@@ -94,14 +77,6 @@ wednesdayButton.addEventListener('click', () => {
 	friday.classList.add('hidden');
 	saturday.classList.add('hidden');
 	sunday.classList.add('hidden');
-
-	removeBtn.addEventListener('click', () => {
-		deleteTask();
-	})
-
-	function deleteTask() {
-		wednesday_item.remove();
-	}
 });
 
 // Thursday
@@ -121,14 +96,6 @@ thursdayButton.addEventListener('click', () => {
 	friday.classList.add('hidden');
 	saturday.classList.add('hidden');
 	sunday.classList.add('hidden');
-
-	removeBtn.addEventListener('click', () => {
-		deleteTask();
-	})
-
-	function deleteTask() {
-		thursday_item.remove();
-	}
 });
 
 // Friday
@@ -148,14 +115,6 @@ fridayButton.addEventListener('click', () => {
 	friday.classList.remove('hidden');
 	saturday.classList.add('hidden');
 	sunday.classList.add('hidden');
-
-	removeBtn.addEventListener('click', () => {
-		deleteTask();
-	})
-
-	function deleteTask() {
-		friday_item.remove();
-	}
 });
 
 // Saturday
@@ -175,14 +134,6 @@ saturdayButton.addEventListener('click', () => {
 	friday.classList.add('hidden');
 	saturday.classList.remove('hidden');
 	sunday.classList.add('hidden');
-
-	removeBtn.addEventListener('click', () => {
-		deleteTask();
-	})
-
-	function deleteTask() {
-		saturday_item.remove();
-	}
 });
 
 // Sunday
@@ -202,12 +153,4 @@ sundayButton.addEventListener('click', () => {
 	friday.classList.add('hidden');
 	saturday.classList.add('hidden');
 	sunday.classList.remove('hidden');
-
-	removeBtn.addEventListener('click', () => {
-		deleteTask();
-	})
-
-	function deleteTask() {
-		sunday_item.remove();
-	}
 });
