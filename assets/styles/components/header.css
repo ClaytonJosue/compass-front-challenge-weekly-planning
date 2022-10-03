@@ -46,6 +46,7 @@ header {
 	font-weight: 400;
 	border-radius: 10px;
 	padding: 7px 12px;
+	cursor: pointer;
 }
 
 .button__save {
