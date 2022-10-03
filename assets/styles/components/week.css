@@ -2,7 +2,7 @@
 
 .week {
 	display: flex;
-	margin-top: 2em;
+	margin: 2em 0;
 }
 
 .week__time {

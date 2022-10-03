@@ -424,33 +424,4 @@ deleteBtn.addEventListener('click', () => {
 		}
 	}
 
-})
-
-
-removeOneBtnMonday.addEventListener('click', () => {
-	monday__item.remove();
-});
-
-removeOneBtnTuesday.addEventListener('click', () => {
-	tuesday__item.remove();
-});
-
-removeOneBtnWednesday.addEventListener('click', () => {
-	wednesday__item.remove();
-});
-
-removeOneBtnThursday.addEventListener('click', () => {
-	thursday__item.remove();
-});
-
-removeOneBtnFriday.addEventListener('click', () => {
-	friday__item.remove();
-});
-
-removeOneBtnSaturday.addEventListener('click', () => {
-	saturday__item.remove();
-});
-
-removeOneBtnSunday.addEventListener('click', () => {
-	sunday__item.remove();
 });
