@@ -19,7 +19,7 @@ function date() {
 	const date = document.querySelector(".time__date");
 	const month = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro']
 
-	let currentDate = today.getDate() + ' de ' + month[today.getMonth()] + ' de ' + today.getFullYear();
+	let currentDate = addZero(today.getDate()) + ' de ' + month[today.getMonth()] + ' de ' + today.getFullYear();
 
 	date.innerHTML = currentDate;
 }
