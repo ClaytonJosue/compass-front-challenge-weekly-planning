@@ -105,6 +105,10 @@ main::-webkit-scrollbar-thumb {
 	margin-left: 2em;
 }
 
+.calendar__task:hover {
+	background: linear-gradient(112.83deg, rgba(228, 240, 248, 0.42) 0%, rgba(255, 255, 255, 0.336) 110.84%);
+}
+
 .calendar__task--perfect {
 	width: 14px;
 	height: 85px;

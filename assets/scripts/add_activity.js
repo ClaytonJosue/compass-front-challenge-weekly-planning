@@ -53,7 +53,7 @@ addBtn.addEventListener('click', () => {
 function addTask() {
 	emptyMonth();
 
-	list.sort(order);
+	list.sort(orderItems);
 	list.forEach((listItem) => {
 		if (listItem.week == 'Segunda') {
 
@@ -74,6 +74,7 @@ function addTask() {
 			time.classList.add("calendar__hour");
 			divTime.appendChild(time);
 			time.innerText = listItem.timeHour;
+			time.textContent = listItem.timeHour.replace(':', 'h') + 'm';
 
 			let divTask = document.createElement("div");
 			divTask.classList.add("calendar__task");
@@ -116,6 +117,7 @@ function addTask() {
 			time.classList.add("calendar__hour");
 			divTime.appendChild(time);
 			time.innerText = listItem.timeHour;
+			time.textContent = listItem.timeHour.replace(':', 'h') + 'm';
 
 			let divTask = document.createElement("div");
 			divTask.classList.add("calendar__task");
@@ -158,7 +160,8 @@ function addTask() {
 			let time = document.createElement("h3");
 			time.classList.add("calendar__hour");
 			divTime.appendChild(time);
-			time.innerText = listItem.timeHour;;
+			time.innerText = listItem.timeHour;
+			time.textContent = listItem.timeHour.replace(':', 'h') + 'm';
 
 			let divTask = document.createElement("div");
 			divTask.classList.add("calendar__task");
@@ -201,7 +204,8 @@ function addTask() {
 			let time = document.createElement("h3");
 			time.classList.add("calendar__hour");
 			divTime.appendChild(time);
-			time.innerText = listItem.timeHour;;
+			time.innerText = listItem.timeHour;
+			time.textContent = listItem.timeHour.replace(':', 'h') + 'm';
 
 			let divTask = document.createElement("div");
 			divTask.classList.add("calendar__task");
@@ -244,7 +248,8 @@ function addTask() {
 			let time = document.createElement("h3");
 			time.classList.add("calendar__hour");
 			divTime.appendChild(time);
-			time.innerText = listItem.timeHour;;
+			time.innerText = listItem.timeHour;
+			time.textContent = listItem.timeHour.replace(':', 'h') + 'm';
 
 			let divTask = document.createElement("div");
 			divTask.classList.add("calendar__task");
@@ -287,7 +292,8 @@ function addTask() {
 			let time = document.createElement("h3");
 			time.classList.add("calendar__hour");
 			divTime.appendChild(time);
-			time.innerText = listItem.timeHour;;
+			time.innerText = listItem.timeHour;
+			time.textContent = listItem.timeHour.replace(':', 'h') + 'm';
 
 			let divTask = document.createElement("div");
 			divTask.classList.add("calendar__task");
@@ -330,7 +336,8 @@ function addTask() {
 			let time = document.createElement("h3");
 			time.classList.add("calendar__hour");
 			divTime.appendChild(time);
-			time.innerText = listItem.timeHour;;
+			time.innerText = listItem.timeHour;
+			time.textContent = listItem.timeHour.replace(':', 'h') + 'm';
 
 			let divTask = document.createElement("div");
 			divTask.classList.add("calendar__task");
@@ -368,7 +375,7 @@ function showTask() {
 	addTask();
 }
 
-function order(a, b) {
+function orderItems(a, b) {
 	if (a.timeHour > b.timeHour) return 1;
 	if (a.timeHour < b.timeHour) return -1;
 	return 0;

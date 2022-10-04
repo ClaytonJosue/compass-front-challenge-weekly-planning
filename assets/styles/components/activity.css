@@ -16,6 +16,7 @@
 
 .add-informations__activity {
 	padding: 10px 195px 10px 5em;
+	color: var(--informations-color);
 	outline: none;
 }
 
